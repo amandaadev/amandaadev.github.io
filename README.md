@@ -1,1 +1,0 @@
-# amandaadev.github.io
