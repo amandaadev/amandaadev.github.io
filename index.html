@@ -7,24 +7,28 @@
   <link rel="stylesheet" href="./css/style.css" />
 </head>
 <body>
+
   <header class="main-navigation">
-    <div class="meu-nome">
-      <h1>Amanda Hellen</h1>
+    <div class="container">
+      <div class="meu-nome">
+        <h1>Amanda Hellen</h1>
+      </div>
+      <nav class="nav">
+        <button class="hamburguer" aria-label="Menu"></button>
+        <ul class="navigation-options">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mim">Sobre mim</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#contatos">Contatos</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="nav">
-      <button class="hamburguer" aria-label="Menu"></button>
-      <ul class="navigation-options">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre-mim">Sobre mim</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#contatos">Contatos</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main>
     <div class="container" id="inicio">
+
       <div class="name-container">
         <div class="infos">
           <h1>Amanda Hellen</h1>
@@ -40,11 +44,8 @@
         </div>
         <img class="avatar" src="./assets/img/eu-avatar.png" alt="Meu Avatar" />
       </div>
-    </div>
-
     <!-- Sobre mim -->
     <section id="sobre-mim">
-      <div class="container">
         <div class="sobre-mim-content">
           <div class="about-me">
             <h2>Sobre mim</h2>
@@ -56,12 +57,9 @@
             <img src="./assets/img/eu.png" alt="eu" />
           </div>
         </div>
-      </div>
     </section>
-
     <!-- Projetos -->
     <section id="projetos">
-      <div class="container">
         <div class="projects">
           <h2>Projetos</h2>
           <div class="embla">
@@ -70,49 +68,61 @@
                 <!-- Slides dos projetos -->
                 <div class="embla-slide">
                   <div class="embla-title">
-                    <h3>Design Project</h3>
-                    <a href="https://amandaadev.github.io/design-project/">
-                      <button>Clique aqui para ver meu projeto!</button>
-                    </a>
+                      <h3>Design Project</h3>
                   </div>
-                  <img src="/assets/projects/design-project.png" alt="Projeto 1" />
+                  <div class="project-hover">
+                      <img src="/assets/projects/design-project.png" alt="Projeto 1" />
+                      <a href="https://amandaadev.github.io/design-project/">
+                          <button class="hover-button">Clique aqui para ver meu projeto!</button>
+                      </a>
+                  </div>
                   <p>
-                    Este projeto foi criado completamente de forma independente, como parte de uma iniciativa pessoal para melhorar minhas habilidades em HTML e CSS.
+                      Este projeto foi criado completamente de forma independente, como parte de uma iniciativa pessoal para melhorar minhas habilidades em HTML e CSS.
                   </p>
-                </div>
+              </div>
+
+
+
                 <div class="embla-slide">
                   <div class="embla-title">
                     <h3>Projeto Audiobook</h3>
+                  </div>
+                  <div class="project-hover">
+                    <img src="/assets/projects/project-audiobook.png" alt="Projeto 2" />
                     <a href="https://amandaadev.github.io/Project-Audiobook/">
-                      <button>Clique aqui para ver meu projeto!</button>
+                      <button class="hover-button">Clique aqui para ver meu projeto!</button>
                     </a>
                   </div>
-                  <img src="/assets/projects/project-audiobook.png" alt="Projeto 2" />
                   <p>
                     Projeto desenvolvido durante as aulas do intensivão de Javascript. As tecnologias utilizadas foram HTML, CSS, Bootstrap e Javascript. Trata-se de um sistema tocador de audiobook com um clássico da literatura brasileira, o Dom Casmurro do famoso Machado de Assis.
                   </p>
                 </div>
+
                 <div class="embla-slide">
                   <div class="embla-title">
-                    <h3>Jogo da Velha com práticas
-                      <br> em HTML, CSS, DOM e eventos</h3>
-                    <a href="https://amandaadev.github.io/project-udemy-jogo-da-velha/">
-                      <button>Clique aqui para ver meu projeto!</button>
-                    </a>
-                  </div>
-                  <img src="/assets/projects/project-jogo-da-velha.png" alt="Projeto 3" />
+                    <h3>Jogo da Velha com práticas em HTML, CSS, DOM e eventos<h3>
+                    </div>
+                    <div class="project-hover">
+                      <img src="/assets/projects/project-jogo-da-velha.png" alt="Projeto 3" />
+                      <a href="https://amandaadev.github.io/project-udemy-jogo-da-velha/">
+                        <button class="hover-button">Clique aqui para ver meu projeto!</button>
+                      </a>
+                    </div>
                   <p>
                     Projeto prático criado a partir do curso intensivo de JavaScript do Básico ao Avançado (c/ Node.js e projetos) da Udemy. Um clássico que você provavelmente já jogou rabiscando no papel durante a aula no colégio ou no intervalo com os amigos. 😄
                   </p>
                 </div>
+
                 <div class="embla-slide">
                   <div class="embla-title">
                     <h3>Quiz de Programação</h3>
-                    <a href="https://amandaadev.github.io/project-udemy-quizz/">
-                      <button>Clique aqui para ver meu projeto!</button>
-                    </a>
                   </div>
-                  <img src="/assets/projects/project-quiz.png" alt="Projeto 4" />
+                  <div class="project-hover">
+                    <img src="/assets/projects/project-quiz.png" alt="Projeto 4" />
+                    <a href="https://amandaadev.github.io/project-udemy-quizz/">
+                    </a>
+                    <button class="hover-button">Clique aqui para ver meu projeto!</button>
+                  </div>
                   <p>
                     O Quiz de Programação foi criado com toda a interface em HTML e CSS responsivo, flexbox, efeitos de hover e um fluxo de jogo no javascript com toda a lógica do quiz.
                   </p>
@@ -146,12 +156,9 @@
             </div>
           </div>
         </div>
-      </div>
     </section>
-
     <!-- Habilidades -->
     <section id="habilidades">
-      <div class="container">
         <div class="skills">
           <h2>Habilidades</h2>
           <h3>HTML, CSS e JavaScript</h3>
@@ -200,12 +207,9 @@
             </p>
           </div>
         </div>
-      </div>
     </section>
-
     <!-- Contatos -->
     <section id="contatos">
-      <div class="container">
         <div class="contacts">
           <h2>Contatos</h2>
           <h3>Redes Sociais</h3>
@@ -225,14 +229,12 @@
           </div>
           <p><a href="https://www.linkedin.com/in/amanda-hellen-10712a238/">https://www.linkedin.com/in/amanda-hellen-10712a238/</a></p>
         </div>
-      </div>
+    </div>
     </section>
   </main>
-
   <footer class="footer">
     © 2023: Amanda Hellen - Desenvolvimento Web
   </footer>
-
   <script src="https://cdn.jsdelivr.net/npm/embla-carousel@latest"></script>
   <script src="js/script.js"></script>
 </body>
