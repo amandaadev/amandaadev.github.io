@@ -23,7 +23,6 @@ Este projeto foi desenvolvido utilizando HTML, CSS e JavaScript. Planejo continu
 Na seção de início, você encontrará:
 
 - Um ícone clicável para acessar diretamente meu LinkedIn ou GitHub.
-- Meu avatar 😅.
 
 ## 📚Projetos
 
